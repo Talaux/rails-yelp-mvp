@@ -1,0 +1,9 @@
+<h1>Reviews#create</h1>
+<p>Find me in app/views/reviews/create.html.erb</p>
+<%= form_with model: @review do |f| %>
+  <%= f.label :content %>
+  <%= f.text_field :content %>
+  <%= f.label :rating %>
+  <%= f.integer :rating %>
+  <%= f.submit %>
+<% end %>
